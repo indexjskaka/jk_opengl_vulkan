@@ -57,7 +57,7 @@ def finalizar():
         end})
         '''
     else:
-        '''
+        return '''
         _G.premium_tab:AddParagraph({"Voce não possui o passe premium, compre-o em nosso servidor do Discord."})
         '''
     
