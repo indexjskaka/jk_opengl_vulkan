@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: jk_opengl_vulkan
+    env: python
+    buildCommand: ""
+    startCommand: python server.py
+    envVars: []
