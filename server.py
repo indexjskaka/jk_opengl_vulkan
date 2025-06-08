@@ -61,6 +61,6 @@ def finalizar():
         _G.premium_tab:AddParagraph({"Voce não possui o passe premium, compre-o em nosso servidor do Discord."})
         '''
     
-if __name__ = "__main__":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port="8000")
     
