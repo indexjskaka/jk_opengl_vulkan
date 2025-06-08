@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 def verify(id_player):
-    url = f"https://inventory.roblox.com/v1/users/{id_player}/items/1/1170214112/is-owned"
+    url = f"https://inventory.roblox.com/v1/users/{id_player}/items/1/671762627/is-owned"
     return requests.get(url).json()
 
 @app.route('/verify')
