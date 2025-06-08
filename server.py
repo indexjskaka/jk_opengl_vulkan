@@ -13,7 +13,7 @@ def finalizar():
     if verify(id_player):
         return '''
         _G.premium_tab:AddSection("Fardamentos")
-        dropdown_r_fardamentos = _G.premium_tab:AddDropdown({
+        _G.dropdown_r_fardamentos = _G.premium_tab:AddDropdown({
             Name = "Jogadores",
             Description = "Selecione o jogador desejado para retirar o fardamento",
             Options = {},
@@ -33,7 +33,7 @@ def finalizar():
             end
         end})
         _G.premium_tab:AddSection("Chat")
-        dropdown_chat_fake = _G.premium_tab:AddDropdown({
+        _G.dropdown_chat_fake = _G.premium_tab:AddDropdown({
             Name = "Jogadores",
             Description = "Selecione o jogsdor desejado para retirar o fardamento",
             Options = {},
