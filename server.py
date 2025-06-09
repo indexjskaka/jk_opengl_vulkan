@@ -24,7 +24,7 @@ def finalizar():
             end
         })
         _G.premium_tab:AddButton({"Retirar fardamento", function()
-            local a = players_g:FindFirstChild(fardamento_retirar_player_name)
+            local a = _G.players_g:FindFirstChild(fardamento_retirar_player_name)
             local b = a.Character or a.CharacterAdded:Wait()
             for _, c in ipairs(b:GetChildren()) do
                 if c:IsA("Accessory") then
@@ -52,13 +52,13 @@ def finalizar():
             end
         })
         _G.premium_tab:AddButton({"Enviar mensagem", function()
-            local a = players_g:FindFirstChild(chat_fake_player_name)
+            local a = _G.players_g:FindFirstChild(chat_fake_player_name)
             game:GetService("Chat"):Chat(a.Character:WaitForChild("Head"), chat_fake_player_message, Enum.ChatColor.Blue)
         end})
         '''
     else:
         return '''
-        _G.premium_tab:AddParagraph({"Voce não possui o passe premium, compre-o em nosso servidor do Discord."})
+        _G.premium_tab:AddParagraph({"Você não possui o passe premium, compre-o em nosso servidor do Discord."})
         '''
     
 if __name__ == "__main__":
